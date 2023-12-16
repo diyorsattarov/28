@@ -1,11 +1,12 @@
-add_library(bar
-    bar/bar.cpp
-)
-target_include_directories(bar PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../include)
-#target_link_libraries(bar PRIVATE Boost::system Boost::serialization)
-
-add_library(vehere
-    vehere/vehere.cpp
+add_library(utilities
+    utilities/utilities.cpp
 )
 
-target_include_directories(vehere PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../include)
+target_include_directories(utilities PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../include)
+
+
+add_library(node
+    node/node.cpp
+)
+
+target_include_directories(node PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../include)
